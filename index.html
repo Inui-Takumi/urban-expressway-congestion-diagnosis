@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#4b1f5e">
+  <meta name="description" content="基于因果机器学习推断的城市快速路常发性拥堵致因诊断系统">
+  <title>城市快速路常发性拥堵致因诊断系统</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="drone-panel.css">
+  <link rel="stylesheet" href="drone-editorial.css">
+  <link rel="stylesheet" href="system-theme.css">
+  <link rel="stylesheet" href="carbon-light.css">
+  <link rel="stylesheet" href="color-accent.css">
+  <script src="script.js" defer></script>
+  <script src="drone-panel.js" defer></script>
+</head>
+<body>
+  <section class="auth" id="auth-view">
+    <div class="institution-bar"><span>城市交通运行研究中心</span><nav><a href="#about">系统简介</a><a href="#guide">使用说明</a><a href="#support">技术支持</a></nav></div>
+    <header class="auth-masthead"><a class="wordmark" href="#"><span class="seal">路</span><span><small>URBAN MOBILITY RESEARCH CENTRE</small><strong>城市快速路常发性拥堵致因诊断系统</strong></span></a><p>运行版 · 2026</p></header>
+    <main class="auth-layout">
+      <section class="auth-intro"><p class="section-index">交通运行诊断与治理决策支持</p><h1>把拥堵诊断整理成<br>一份可以追溯的病历。</h1><p class="lead">汇集交通流、天气、事件与道路条件，记录拥堵发生过程，分析主要致因，并为管理部门提供可复核的治理建议。</p><div class="service-grid"><article><b>01</b><strong>拥堵病历</strong><span>记录异常、诊断与恢复过程</span></article><article><b>02</b><strong>因果溯源</strong><span>区分相关因素与直接致因</span></article><article><b>03</b><strong>治理复盘</strong><span>比较实施前后的实际效果</span></article></div></section>
+      <section class="auth-card" aria-label="账号入口"><div class="auth-tabs" role="tablist"><button class="active" id="login-tab" type="button">登录</button><button id="register-tab" type="button">注册申请</button></div>
+        <form id="login-form" class="auth-form"><header><p>用户入口</p><h2>登录系统</h2><span>请使用交通运行中心分配的账号。</span></header><label>账号或工号<input id="login-user" value="analyst" autocomplete="username"></label><label>密码<input id="login-pass" type="password" value="123456" autocomplete="current-password"></label><div class="form-row"><label class="checkbox"><input type="checkbox" checked> 保持登录</label><button class="text-button" type="button">账号帮助</button></div><button class="submit-button" type="submit">进入诊断系统</button><p class="demo-note">演示账号：analyst　密码：123456</p></form>
+        <form id="register-form" class="auth-form" hidden><header><p>账号申请</p><h2>填写申请信息</h2><span>申请将由系统管理员统一审核。</span></header><div class="form-grid"><label>姓名<input required placeholder="请输入姓名"></label><label>所属部门<input required placeholder="例如：交通运行处"></label></div><label>工作邮箱<input required type="email" placeholder="name@organization.cn"></label><label>设置密码<input required type="password" minlength="6" placeholder="至少 6 位字符"></label><label class="checkbox agreement"><input type="checkbox" required checked> 我已阅读数据使用和保密规范</label><button class="submit-button" type="submit">提交注册申请</button></form>
+      </section>
+    </main>
+    <footer class="auth-footer"><span>本系统展示内容为前端演示数据</span><span>© 2026 城市交通运行研究中心</span></footer>
+  </section>
+  <div class="workspace" id="workspace" hidden>
+    <header class="workspace-head"><a class="workspace-brand" href="#overview">URBAN-CM</a><nav class="route-nav" aria-label="系统功能导航"><button data-route="overview" class="active">运行概览</button><button data-route="records">拥堵病历</button><button data-route="causal">因果溯源</button><button data-route="sources">多源数据</button><button data-route="strategy">治理建议</button><button data-route="evaluation">评估复盘</button></nav><div class="head-actions"><button type="button">消息</button><span id="clock"></span><span class="avatar">研</span><b>运行分析员</b><button id="logout" type="button">退出</button></div></header>
+    <main class="page-shell"><header class="page-head"><div><p id="page-kicker">实时运行概况</p><h1 id="page-title">运行概览</h1></div><div class="page-tools"><button type="button">导出简报</button><button class="accent" type="button">新建诊断</button></div></header><section class="status-banner"><div class="banner-head"><strong>今日诊断：<b>18 例</b></strong><span>重点路段：环城东路高架 <i>诊断中</i></span></div><p><b>运行提示：</b>早高峰拥堵诊断已完成 14 例，当前 3 例正在推断，1 例等待人工复核；气象、事件与交通流数据同步正常。</p><div class="banner-stages"><span>异常识别</span><span>数据校验</span><span>致因推断</span><span>病历生成</span><span>治理建议</span></div></section><nav class="section-tabs"><button class="active">路网概况</button><button>致因贡献</button><button>诊断队列</button><button>反事实推演</button></nav><div id="page-content" class="page-content" aria-live="polite"></div></main>
+    <footer class="workspace-footer"><span><i></i>数据更新时间 <b id="update-time">--:--:--</b></span><span>模型版本 CM-2.4.1 · 演示数据</span></footer>
+  </div>
+</body>
+</html>

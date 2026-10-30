@@ -1,0 +1,41 @@
+/* Light interface with restrained, purposeful color accents. */
+.auth { background:#f7f9fd; }
+.institution-bar { background:#25385a; color:#e7eefc; border-color:#25385a; }
+.institution-bar a { border-color:#ffffff2b; }.institution-bar a:hover { color:#fff; background:#ffffff14; }
+.auth-masthead { background:#fff; }.seal { background:#4057b2; }
+.auth-intro h1 { color:#202d49; }.section-index { color:#5269b6; }.lead { color:#526079; }
+.service-grid { border-top:3px solid #748bd1; }.service-grid article:nth-child(2) b { color:#168d88; }.service-grid article:nth-child(3) b { color:#c67c50; }
+.auth-card { border-top:4px solid #637dcc; box-shadow:0 12px 35px #263d6b12; }.submit-button { background:#435fbd; }.submit-button:hover { background:#344d9e; }
+.workspace,.drone-page-active .workspace { background:#f1f5fa; --blue:#4668be; --blue-soft:#edf2ff; }
+.workspace-head,.drone-page-active .workspace-head { border-bottom:1px solid #dce5f1; box-shadow:0 2px 12px #314d7b0a; }
+.workspace-brand,.drone-page-active .workspace-brand { color:#263d6b; }
+.route-nav button.active:after,.section-tabs button.active:after,.drone-page-active .route-nav button.active:after { background:#5575c8; }
+.route-nav button.active,.drone-page-active .route-nav button.active { color:#3659af; }
+.avatar,.drone-page-active .head-actions .avatar { background:#e8efff; color:#435fbd; }
+.page-head h1,.drone-page-active .page-head h1 { color:#253553; }.page-head p { color:#72819a; }
+.page-tools .accent { background:#4e6ec4; border-color:#4e6ec4; }.page-tools button { border-color:#a6b9e1; color:#405fae; }
+.status-banner { background:linear-gradient(110deg,#e8efff 0%,#f0f6ff 56%,#e8f6f5 100%); border-color:#d4e2f4; border-left-color:#5b78c8; }
+.banner-head strong { color:#263d6b; }.banner-head i { background:#e2f3ef; color:#18786b; }.status-banner p,.banner-stages { color:#566981; }.banner-stages span:after { border-color:#d2def1; background:#708bd2; }
+.metric,.panel,.source-card,.filter-bar,.record-item { border-color:#dce5ef; }
+.metric { position:relative; overflow:hidden; }.metric:before { content:""; position:absolute; top:0; left:0; right:0; height:3px; background:#708bd2; }
+.metric:nth-child(2):before { background:#e19b68; }.metric:nth-child(3):before { background:#55a99d; }.metric:nth-child(4):before { background:#a58bcf; }
+.metric strong,.panel-head h2,.panel-head h3 { color:#263752; }.metric small,.panel-head p { color:#75849a; }
+.panel-head>span,.tag { background:#edf2ff; border-color:#d8e2fa; color:#4a65ad; }
+.case-card { border-top:3px solid #b38bca; }.severity { background:#fff1eb; border-color:#f4d5c8; color:#ad5e43; }
+.causal-canvas,.dag-map,.matrix,.trend { background:#f6f9fd; border-color:#dfe8f2; }
+.cause-node,.dag-node { border-color:#d5e0ef; }.cause-node.source,.dag-node.input { border-color:#6c88cf; }.cause-node.factor,.dag-node.mediator { border-color:#e5a476; }.cause-node.result,.dag-node.target { background:#f5effa; border-color:#a68bc5; }
+.road i,.bar i,.effect-line i { background:#718ed6; }.advice { background:#fdf5ed; border-color:#e1aa7a; color:#6a5748; }
+.diagnosis-table th { background:#f3f6fb; color:#586b83; }.diagnosis-table td,.diagnosis-table th { border-color:#e8edf4; }
+.status-pill { background:#e5f5ef; color:#287866; }.status-pill.wait { background:#fff4df; color:#946b24; }
+.source-card:nth-child(2) { border-top-color:#69aeb4; }.source-card:nth-child(3) { border-top-color:#e0a476; }.source-card:nth-child(4) { border-top-color:#a48bc9; }
+.source-card:nth-child(2) .source-icon { background:#4c999a; }.source-card:nth-child(3) .source-icon { background:#cb865b; }.source-card:nth-child(4) .source-icon { background:#957bb9; }.source-icon { background:#6681c9; }
+.confidence { background:#627bc0; }.priority { background:#edf2ff; color:#526cb7; }.period { background:#f5f7fb; border-color:#e0e8f2; }
+.drone-section { color:#263752; }.drone-title { border-color:#d4dfee; }.drone-title h2 { color:#263752; }.drone-title span,.drone-card header small { color:#647ba5; }.drone-title p,.feed-footer p,.media-note { color:#708098; }
+.drone-card,.drone-card:hover,.drone-summary { border-color:#dce5ef; background:#fff; }.drone-card h3,.drone-summary strong,.feed-footer strong,.location-details strong,.mission-list strong { color:#263752; }
+.drone-summary>div { border-color:#e5ebf3; }.drone-summary>div:nth-child(1) { background:#f3f6ff; }.drone-summary>div:nth-child(2) { background:#eff8f7; }.drone-summary>div:nth-child(3) { background:#fbf6f0; }.drone-summary>div:nth-child(4) { background:#f6f3fb; }
+.drone-title .demo-badge,.map-tag,.signal { background:#edf2ff; border-color:#d9e3f7; color:#526ca7; }
+.upload-button,.note-form button { background:#506fc1; border-color:#506fc1; }.upload-button:hover,.note-form button:hover { background:#3f5ca8; border-color:#3f5ca8; }
+.drone-actions button { border-color:#b1c2e5; color:#4967ae; }.drone-actions button:hover,.drone-actions button[aria-pressed=true] { background:#eaf0ff; border-color:#718bd0; color:#3658ab; }
+.location-details div,.mission-list div { background:#f3f7fb; border-color:#e1eaf2; }.drone-grid > .drone-card:nth-child(2) .location-details div { border-color:#e6ecf3; }.note-form input { background:#f6f8fc; border-color:#b8c6d8; }.note-list li { border-color:#e2eaf2; color:#4e6079; }
+.drone-map-marker { background:#4f70c5; box-shadow:0 2px 6px #253d6b66,0 0 0 5px #6f8bd433; }
+@media(max-width:900px) { .drone-summary>div:nth-child(-n+2) { border-bottom-color:#e5ebf3; } }
